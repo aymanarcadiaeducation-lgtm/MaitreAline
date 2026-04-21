@@ -2204,21 +2204,21 @@ h3 {
 
   /* Trust */
   .trust-title {
-    width: max-content;
-    max-width: min(340px, calc(100vw - 48px));
-    font-size: 25px;
-    line-height: 1.08;
+    width: auto;
+    max-width: none;
+    font-size: 24px;
+    line-height: 1.06;
     letter-spacing: 0.01em;
     font-weight: 600;
-    color: #101010;
+    color: #1f1a17;
     -webkit-text-stroke: 0;
-    text-shadow: 0 1px 0 rgba(255,255,255,0.75);
-    background: rgba(248,245,240,0.94);
-    border: 1px solid rgba(122, 92, 46, 0.12);
+    text-shadow: 0 1px 1px rgba(255,255,255,0.18);
+    background: none;
+    border: none;
     box-shadow: none;
-    padding: 12px 16px;
-    border-radius: 14px;
-    margin: 12px auto 58px;
+    padding: 0;
+    border-radius: 0;
+    margin: 12px auto 54px;
     text-align: center;
   }
   .trust-title-desktop {
@@ -2234,16 +2234,22 @@ h3 {
   }
   .trust-section { padding: 468px 0 64px; }
   .trust-section::before { background-position: 18% 8%; }
-  .trust-overlay {
-    inset: auto 0 0 0;
-    height: 76%;
+  .trust-section::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
     background: linear-gradient(
       180deg,
-      rgba(245,240,235,0.55) 0%,
-      rgba(245,240,235,0.75) 60%,
-      rgba(245,240,235,0.9) 100%
+      rgba(245, 240, 235, 0.00) 0%,
+      rgba(245, 240, 235, 0.08) 35%,
+      rgba(245, 240, 235, 0.35) 58%,
+      rgba(245, 240, 235, 0.72) 78%,
+      rgba(245, 240, 235, 0.92) 100%
     );
   }
+  .trust-overlay { display: none; }
   .trust-content {
     padding: 0 24px;
     text-align: center;
@@ -2251,16 +2257,18 @@ h3 {
   .trust-eyebrow {
     color: #6d5123;
     text-shadow: none;
-    background: rgba(248,245,240,0.44);
-    border: 1px solid rgba(122, 92, 46, 0.12);
+    background: rgba(245,240,235,0.78);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    border: none;
     display: block;
-    padding: 3px 8px;
+    padding: 4px 10px;
     border-radius: 8px;
     font-size: 9px;
     letter-spacing: 0.16em;
     margin: 0 auto 22px;
     width: fit-content;
-    opacity: 0.82;
+    opacity: 0.88;
   }
   .trust-title::after {
     display: none;
