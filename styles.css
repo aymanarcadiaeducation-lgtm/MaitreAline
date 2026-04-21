@@ -2235,14 +2235,13 @@ h3 {
   .trust-section { padding: 468px 0 64px; }
   .trust-section::before { background-position: 18% 8%; }
   .trust-overlay {
+    inset: auto 0 0 0;
+    height: 76%;
     background: linear-gradient(
       180deg,
-      rgba(255,255,255,0) 0%,
-      rgba(255,255,255,0.18) 36%,
-      rgba(248,245,240,0.68) 48%,
-      rgba(248,245,240,0.95) 62%,
-      rgba(248,245,240,0.99) 80%,
-      #f8f5f0 100%
+      rgba(245,240,235,0.55) 0%,
+      rgba(245,240,235,0.75) 60%,
+      rgba(245,240,235,0.9) 100%
     );
   }
   .trust-content {
