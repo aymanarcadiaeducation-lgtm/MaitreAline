@@ -2198,6 +2198,16 @@ h3 {
     font-size: 26px;
     line-height: 1.35;
     letter-spacing: 0.08em;
+    color: #141414;
+    -webkit-text-stroke: 0.3px rgba(20, 20, 20, 0.65);
+    text-shadow:
+      0 1px 0 rgba(255,255,255,0.78),
+      0 8px 24px rgba(255,255,255,0.62);
+    background: rgba(248,245,240,0.28);
+    padding: 10px 12px 14px;
+    border-radius: 18px;
+    margin-left: -6px;
+    margin-right: -6px;
   }
   .trust-section { padding: 430px 0 64px; }
   .trust-section::before { background-position: 18% 8%; }
@@ -2213,7 +2223,16 @@ h3 {
     );
   }
   .trust-content { padding: 0 20px; }
-  .trust-eyebrow { text-shadow: 0 1px 2px rgba(255,255,255,0.35); }
+  .trust-eyebrow {
+    color: #6d5123;
+    text-shadow:
+      0 1px 0 rgba(255,255,255,0.88),
+      0 0 16px rgba(255,255,255,0.6);
+    background: rgba(248,245,240,0.42);
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 999px;
+  }
   .trust-text,
   .trust-bullets,
   .trust-engagements-label {
