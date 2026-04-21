@@ -2319,25 +2319,29 @@ h3 {
     background: #7A5C2E;
   }
   .trust-button {
-    display: block;
-    width: 100%;
-    max-width: 320px;
+    display: inline-flex;
+    width: auto;
+    max-width: 100%;
     margin: 46px auto 0;
-    padding: 16px 22px;
+    padding: 14px 32px;
     text-align: center;
     background: transparent;
-    border-color: #7A5C2E;
+    border: 1px solid #C6A46C;
     color: #7A5C2E;
     box-shadow: none;
-    border-radius: 12px;
+    border-radius: var(--radius);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    white-space: nowrap;
   }
   .trust-button:hover {
-    background: rgba(122, 92, 46, 0.06);
-    border-color: #7A5C2E;
-    color: #7A5C2E;
+    background: #C6A46C;
+    border-color: #C6A46C;
+    color: #ffffff;
     box-shadow: none;
     transform: none;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.14em;
   }
   .trust-button-desktop {
     display: none;
