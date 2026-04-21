@@ -2204,9 +2204,11 @@ h3 {
 
   /* Trust */
   .trust-title {
-    font-size: 22px;
-    line-height: 1.16;
-    letter-spacing: 0.02em;
+    width: fit-content;
+    max-width: 300px;
+    font-size: 23px;
+    line-height: 1.12;
+    letter-spacing: 0.01em;
     font-weight: 600;
     color: #101010;
     -webkit-text-stroke: 0;
@@ -2217,10 +2219,9 @@ h3 {
     -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(6px);
     box-shadow: 0 10px 30px rgba(74, 54, 28, 0.14);
-    padding: 12px 14px;
-    border-radius: 16px;
-    margin: -4px auto 22px;
-    max-width: 235px;
+    padding: 14px 18px;
+    border-radius: 20px;
+    margin: 8px auto 30px;
     text-align: center;
   }
   .trust-title-desktop {
@@ -2230,7 +2231,7 @@ h3 {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    gap: 1px;
+    gap: 0;
   }
   .trust-title-line {
     display: block;
@@ -2266,7 +2267,7 @@ h3 {
     border-radius: 999px;
     font-size: 10px;
     letter-spacing: 0.14em;
-    margin: 0 auto 14px;
+    margin: 0 auto 18px;
     width: fit-content;
     opacity: 0.9;
   }
