@@ -1,0 +1,26 @@
+{
+  "avocats": [
+    {
+      "id": 1,
+      "nome": "Aline MOEHRMANN",
+      "slug": "aline-moehrmann",
+      "indirizzo": "7, rue Oberlin",
+      "citta": "Strasbourg",
+      "cap": "67000",
+      "ordine": "Barreau de Strasbourg",
+      "serment": "janvier 2019",
+      "telefono": "07 45 15 10 69",
+      "email": "contact@m-avocat.com",
+      "competenze": [
+        "Droit immobilier",
+        "Droit pénal",
+        "Droit de la consommation",
+        "Droit des assurances",
+        "Droit de la construction",
+        "Médiation professionnelle"
+      ],
+      "esperienza": "avocate à Strasbourg, exerçant à son compte depuis juillet 2023",
+      "descrizione_breve": "Aline MOEHRMANN, avocate au Barreau de Strasbourg, intervient principalement en droit immobilier et en droit pénal. Elle accompagne également ses clients en consommation, assurances, construction et médiation professionnelle."
+    }
+  ]
+}
