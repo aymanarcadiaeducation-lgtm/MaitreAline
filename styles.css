@@ -2199,15 +2199,16 @@ h3 {
     line-height: 1.35;
     letter-spacing: 0.08em;
   }
-  .trust-section { padding: 320px 0 64px; }
-  .trust-section::before { background-position: 22% top; }
+  .trust-section { padding: 430px 0 64px; }
+  .trust-section::before { background-position: 18% 8%; }
   .trust-overlay {
     background: linear-gradient(
       180deg,
       rgba(255,255,255,0) 0%,
-      rgba(255,255,255,0.08) 26%,
-      rgba(248,245,240,0.86) 38%,
-      rgba(248,245,240,0.96) 50%,
+      rgba(255,255,255,0.04) 44%,
+      rgba(248,245,240,0.28) 56%,
+      rgba(248,245,240,0.82) 68%,
+      rgba(248,245,240,0.96) 80%,
       #f8f5f0 100%
     );
   }
