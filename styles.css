@@ -2205,23 +2205,20 @@ h3 {
   /* Trust */
   .trust-title {
     width: fit-content;
-    max-width: 300px;
+    max-width: 280px;
     font-size: 23px;
     line-height: 1.12;
     letter-spacing: 0.01em;
     font-weight: 600;
     color: #101010;
     -webkit-text-stroke: 0;
-    text-shadow:
-      0 1px 0 rgba(255,255,255,0.92),
-      0 6px 18px rgba(255,255,255,0.4);
-    background: rgba(248,245,240,0.85);
-    -webkit-backdrop-filter: blur(6px);
-    backdrop-filter: blur(6px);
-    box-shadow: 0 10px 30px rgba(74, 54, 28, 0.14);
-    padding: 14px 18px;
-    border-radius: 20px;
-    margin: 8px auto 30px;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.75);
+    background: rgba(248,245,240,0.94);
+    border: 1px solid rgba(122, 92, 46, 0.12);
+    box-shadow: none;
+    padding: 12px 16px;
+    border-radius: 14px;
+    margin: 10px auto 38px;
     text-align: center;
   }
   .trust-title-desktop {
@@ -2243,33 +2240,30 @@ h3 {
     background: linear-gradient(
       180deg,
       rgba(255,255,255,0) 0%,
-      rgba(255,255,255,0.16) 38%,
-      rgba(248,245,240,0.58) 50%,
-      rgba(248,245,240,0.94) 64%,
-      rgba(248,245,240,0.985) 80%,
+      rgba(255,255,255,0.18) 36%,
+      rgba(248,245,240,0.68) 48%,
+      rgba(248,245,240,0.95) 62%,
+      rgba(248,245,240,0.99) 80%,
       #f8f5f0 100%
     );
   }
   .trust-content {
-    padding: 0 20px;
-    text-align: left;
+    padding: 0 24px;
+    text-align: center;
   }
   .trust-eyebrow {
     color: #6d5123;
-    text-shadow:
-      0 1px 0 rgba(255,255,255,0.88),
-      0 0 16px rgba(255,255,255,0.6);
-    background: rgba(248,245,240,0.5);
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
+    text-shadow: none;
+    background: rgba(248,245,240,0.44);
+    border: 1px solid rgba(122, 92, 46, 0.12);
     display: block;
-    padding: 4px 9px;
-    border-radius: 999px;
-    font-size: 10px;
-    letter-spacing: 0.14em;
-    margin: 0 auto 18px;
+    padding: 3px 8px;
+    border-radius: 8px;
+    font-size: 9px;
+    letter-spacing: 0.16em;
+    margin: 0 auto 22px;
     width: fit-content;
-    opacity: 0.9;
+    opacity: 0.82;
   }
   .trust-title::after {
     display: none;
@@ -2281,66 +2275,69 @@ h3 {
   }
   .trust-mobile-copy {
     display: block;
-    max-width: 420px;
-    margin: 0 auto 36px;
+    max-width: 340px;
+    margin: 0 auto 44px;
   }
   .trust-mobile-summary {
-    font-size: 17px;
-    line-height: 1.55;
-    color: #090909;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #15110d;
     text-shadow: none;
-    margin: 0 0 22px;
-    font-weight: 500;
+    margin: 0 0 26px;
+    font-weight: 400;
+    text-align: left;
   }
   .trust-mobile-points {
     list-style: none;
     padding: 0;
     margin: 0;
     display: grid;
-    gap: 12px;
+    gap: 0;
+    border-top: 1px solid rgba(122, 92, 46, 0.14);
+    border-bottom: 1px solid rgba(122, 92, 46, 0.14);
   }
   .trust-mobile-points li {
     position: relative;
-    padding: 12px 14px 12px 50px;
-    border-radius: 16px;
-    background: rgba(248,245,240,0.76);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 10px 30px rgba(74, 54, 28, 0.08);
-    border: 1px solid rgba(122, 92, 46, 0.12);
-    color: #101010;
+    padding: 14px 0 14px 24px;
+    color: #17120d;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.45;
+    text-align: left;
+    border-top: 1px solid rgba(122, 92, 46, 0.1);
   }
+  .trust-mobile-points li:first-child { border-top: none; }
   .trust-mobile-points li::before {
-    content: "✓";
+    content: "";
     position: absolute;
     top: 50%;
-    left: 16px;
+    left: 4px;
     transform: translateY(-50%);
-    width: 28px;
-    height: 28px;
+    width: 7px;
+    height: 7px;
     border-radius: 999px;
-    display: grid;
-    place-items: center;
     background: #7A5C2E;
-    color: #fff;
-    font-size: 13px;
-    font-weight: 700;
   }
   .trust-button {
     display: block;
     width: 100%;
-    max-width: 360px;
-    margin: 40px auto 0;
-    padding: 17px 22px;
+    max-width: 320px;
+    margin: 46px auto 0;
+    padding: 16px 22px;
     text-align: center;
-    background: #7A5C2E;
+    background: transparent;
     border-color: #7A5C2E;
-    color: #fff;
-    box-shadow: 0 14px 30px rgba(122, 92, 46, 0.22);
-    border-radius: 16px;
+    color: #7A5C2E;
+    box-shadow: none;
+    border-radius: 12px;
+  }
+  .trust-button:hover {
+    background: rgba(122, 92, 46, 0.06);
+    border-color: #7A5C2E;
+    color: #7A5C2E;
+    box-shadow: none;
+    transform: none;
+    letter-spacing: 1.5px;
   }
   .trust-button-desktop {
     display: none;
