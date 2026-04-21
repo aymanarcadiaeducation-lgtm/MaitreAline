@@ -2242,7 +2242,8 @@ h3 {
   .trust-text,
   .trust-bullets,
   .trust-engagements-label {
-    color: #121212;
+    color: #090909;
+    text-shadow: none;
   }
 
   /* Testimonials */
