@@ -2227,7 +2227,14 @@ h3 {
     display: none;
   }
   .trust-title-mobile {
-    display: inline;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+  }
+  .trust-title-line {
+    display: block;
+    white-space: nowrap;
   }
   .trust-section { padding: 430px 0 64px; }
   .trust-section::before { background-position: 18% 8%; }
