@@ -2208,7 +2208,7 @@ h3 {
     min-height: 0;
     display: block;
     background-attachment: scroll;
-    padding: 0;
+    padding: 468px 0 64px;
   }
   .trust-title {
     width: max-content;
@@ -2232,7 +2232,7 @@ h3 {
     display: none;
   }
   .trust-title-mobile {
-    display: block;
+    display: none;
   }
   .trust-title-line {
     display: block;
@@ -2287,10 +2287,12 @@ h3 {
   .trust-text,
   .trust-bullets,
   .trust-engagements-label {
-    display: none;
+    display: block;
+    color: #121212;
+    text-shadow: none;
   }
   .trust-mobile-copy {
-    display: block;
+    display: none;
     max-width: 340px;
     margin: 0 auto;
   }
@@ -2365,10 +2367,10 @@ h3 {
     letter-spacing: 0.14em;
   }
   .trust-button-desktop {
-    display: none;
+    display: inline;
   }
   .trust-button-mobile {
-    display: inline;
+    display: none;
   }
 
   /* Testimonials */
