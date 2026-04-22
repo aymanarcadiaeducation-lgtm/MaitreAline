@@ -2211,84 +2211,75 @@ h3 {
     padding: 0;
   }
   .trust-title {
-    width: fit-content;
-    max-width: none;
-    font-size: 1.88rem;
-    line-height: 1.04;
-    letter-spacing: 0.02em;
+    width: max-content;
+    max-width: min(340px, calc(100vw - 48px));
+    font-size: 25px;
+    line-height: 1.08;
+    letter-spacing: 0.01em;
     font-weight: 600;
-    color: #181310;
+    color: #101010;
     -webkit-text-stroke: 0;
-    text-shadow: none;
-    background: none;
-    border: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.75);
+    background: rgba(248,245,240,0.94);
+    border: 1px solid rgba(122, 92, 46, 0.12);
     box-shadow: none;
-    padding: 0;
-    border-radius: 0;
-    margin: 0 auto 22px;
+    padding: 12px 16px;
+    border-radius: 14px;
+    margin: 12px auto 58px;
     text-align: center;
   }
   .trust-title-desktop {
     display: none;
   }
   .trust-title-mobile {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
+    display: block;
   }
   .trust-title-line {
-    display: inline-block;
+    display: block;
     white-space: nowrap;
     text-align: center;
   }
   .trust-section::before {
-    background-position: 24% 6%;
+    background-position: 18% 8%;
     background-attachment: scroll;
   }
-  .trust-section::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    pointer-events: none;
+  .trust-section::after { display: none; }
+  .trust-overlay {
+    display: block;
+    inset: auto 0 0 0;
+    height: 76%;
     background: linear-gradient(
-      to bottom,
-      rgba(245, 240, 233, 0) 52%,
-      rgba(245, 240, 233, 0.08) 64%,
-      rgba(245, 240, 233, 0.72) 82%,
-      rgba(245, 240, 233, 0.96) 100%
+      180deg,
+      rgba(245,240,235,0.55) 0%,
+      rgba(245,240,235,0.75) 60%,
+      rgba(245,240,235,0.9) 100%
     );
   }
-  .trust-overlay { display: none; }
   .trust-content {
-    width: 100%;
-    max-width: 100%;
+    width: auto;
+    max-width: none;
     margin: 0 auto;
-    padding: 420px 24px 72px;
-    box-sizing: border-box;
+    padding: 0 24px;
     text-align: center;
   }
   .trust-mobile-shell {
-    position: relative;
-    width: min(100%, 304px);
-    margin: 0 auto;
+    position: static;
+    width: auto;
+    margin: 0;
   }
   .trust-eyebrow {
-    color: #8a6732;
+    color: #6d5123;
     text-shadow: none;
-    background: rgba(245, 240, 233, 0.88);
-    -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(2px);
-    border: none;
+    background: rgba(248,245,240,0.44);
+    border: 1px solid rgba(122, 92, 46, 0.12);
     display: block;
-    padding: 5px 12px;
-    border-radius: 999px;
-    font-size: 11px;
-    line-height: 1;
+    padding: 3px 8px;
+    border-radius: 8px;
+    font-size: 9px;
     letter-spacing: 0.14em;
-    margin: 0 auto 16px;
+    margin: 0 auto 22px;
     width: fit-content;
-    opacity: 1;
+    opacity: 0.82;
   }
   .trust-title::after {
     display: none;
@@ -2300,77 +2291,78 @@ h3 {
   }
   .trust-mobile-copy {
     display: block;
-    width: min(100%, 288px);
+    max-width: 340px;
     margin: 0 auto;
   }
   .trust-mobile-summary {
-    max-width: none;
-    font-size: 15px;
-    line-height: 1.58;
-    color: #26201c;
+    max-width: 18ch;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #15110d;
     text-shadow: none;
-    margin: 0 0 28px;
+    margin: 0 auto 26px;
     font-weight: 400;
-    text-align: left;
+    text-align: center;
   }
   .trust-mobile-points {
     list-style: none;
     padding: 0;
-    width: 100%;
     margin: 0;
-    border-top: 1px solid rgba(138, 103, 50, 0.15);
-    border-bottom: 1px solid rgba(138, 103, 50, 0.15);
+    display: grid;
+    gap: 0;
+    border-top: 1px solid rgba(122, 92, 46, 0.14);
+    border-bottom: 1px solid rgba(122, 92, 46, 0.14);
   }
   .trust-mobile-points li {
-    display: grid;
-    grid-template-columns: 7px minmax(0, 1fr);
-    gap: 14px;
-    align-items: start;
-    padding: 15px 0;
-    color: #26201c;
+    position: relative;
+    padding: 14px 0 14px 24px;
+    color: #17120d;
     font-size: 15px;
-    font-weight: 400;
-    line-height: 1.5;
+    font-weight: 500;
+    line-height: 1.45;
     text-align: left;
-    border-top: 1px solid rgba(138, 103, 50, 0.15);
+    border-top: 1px solid rgba(122, 92, 46, 0.1);
   }
   .trust-mobile-points li:first-child { border-top: none; }
   .trust-mobile-points li::before {
     content: "";
-    width: 6px;
-    height: 6px;
-    margin-top: 0.45em;
-    align-self: start;
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    transform: translateY(-50%);
+    width: 7px;
+    height: 7px;
+    flex: 0 0 7px;
     border-radius: 999px;
-    background: #9a7338;
+    background: #7A5C2E;
   }
   .trust-button {
     display: inline-flex;
-    width: min(100%, 276px);
-    max-width: 276px;
+    width: auto;
+    max-width: 100%;
     min-width: 0;
-    min-height: 56px;
-    margin: 34px auto 0;
-    padding: 14px 28px;
+    min-height: 0;
+    margin: 46px auto 0;
+    padding: 14px 32px;
     text-align: center;
     background: transparent;
-    border: 1px solid var(--accent);
+    border: 1px solid #C6A46C;
     color: #7A5C2E;
     box-shadow: none;
     border-radius: var(--radius);
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 0.28em;
-    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: none;
     white-space: nowrap;
   }
   .trust-button:hover {
-    background: var(--accent);
-    border-color: var(--accent-strong);
-    color: var(--text-dark);
+    background: #C6A46C;
+    border-color: #C6A46C;
+    color: #ffffff;
     box-shadow: none;
     transform: none;
-    letter-spacing: 0.28em;
+    letter-spacing: 0.14em;
   }
   .trust-button-desktop {
     display: none;
