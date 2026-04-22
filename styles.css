@@ -2213,19 +2213,23 @@ h3 {
   .trust-title {
     width: max-content;
     max-width: min(340px, calc(100vw - 48px));
-    font-size: 25px;
-    line-height: 1.08;
-    letter-spacing: 0.01em;
-    font-weight: 600;
+    font-size: 27px;
+    line-height: 1.28;
+    letter-spacing: 0.05em;
+    font-weight: 700;
     color: #101010;
     -webkit-text-stroke: 0;
-    text-shadow: 0 1px 0 rgba(255,255,255,0.75);
-    background: rgba(248,245,240,0.94);
-    border: 1px solid rgba(122, 92, 46, 0.12);
-    box-shadow: none;
-    padding: 12px 16px;
-    border-radius: 14px;
-    margin: 12px auto 58px;
+    text-shadow:
+      0 1px 0 rgba(255,255,255,0.92),
+      0 6px 18px rgba(255,255,255,0.4);
+    background: rgba(248,245,240,0.58);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(74, 54, 28, 0.14);
+    padding: 12px 16px 16px;
+    border-radius: 20px;
+    margin-left: -6px;
+    margin-right: -6px;
     text-align: center;
   }
   .trust-title-desktop {
@@ -2250,16 +2254,19 @@ h3 {
     height: 76%;
     background: linear-gradient(
       180deg,
-      rgba(245,240,235,0.55) 0%,
-      rgba(245,240,235,0.75) 60%,
-      rgba(245,240,235,0.9) 100%
+      rgba(255,255,255,0) 0%,
+      rgba(255,255,255,0.04) 44%,
+      rgba(248,245,240,0.28) 56%,
+      rgba(248,245,240,0.82) 68%,
+      rgba(248,245,240,0.96) 80%,
+      #f8f5f0 100%
     );
   }
   .trust-content {
     width: auto;
     max-width: none;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 20px;
     text-align: center;
   }
   .trust-mobile-shell {
@@ -2269,17 +2276,20 @@ h3 {
   }
   .trust-eyebrow {
     color: #6d5123;
-    text-shadow: none;
-    background: rgba(248,245,240,0.44);
-    border: 1px solid rgba(122, 92, 46, 0.12);
-    display: block;
-    padding: 3px 8px;
-    border-radius: 8px;
-    font-size: 9px;
-    letter-spacing: 0.14em;
-    margin: 0 auto 22px;
+    text-shadow:
+      0 1px 0 rgba(255,255,255,0.88),
+      0 0 16px rgba(255,255,255,0.6);
+    background: rgba(248,245,240,0.58);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 999px;
+    font-size: inherit;
+    letter-spacing: inherit;
+    margin: 0 auto 20px;
     width: fit-content;
-    opacity: 0.82;
+    opacity: 1;
   }
   .trust-title::after {
     display: none;
@@ -2288,7 +2298,7 @@ h3 {
   .trust-bullets,
   .trust-engagements-label {
     display: block;
-    color: #121212;
+    color: #090909;
     text-shadow: none;
   }
   .trust-mobile-copy {
