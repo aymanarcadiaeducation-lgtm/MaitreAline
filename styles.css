@@ -2292,7 +2292,7 @@ h3 {
   .trust-mobile-copy {
     display: block;
     max-width: 340px;
-    margin: 76px auto 0;
+    margin: 0 auto;
   }
   .trust-mobile-summary {
     max-width: 18ch;
