@@ -2300,6 +2300,9 @@ h3 {
     color: #090909;
     text-shadow: none;
   }
+  .trust-text {
+    margin-top: 76px;
+  }
   .trust-mobile-copy {
     display: none;
     max-width: 340px;
